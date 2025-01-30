@@ -11,6 +11,19 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'coin',
+    loadChildren: () => import('./coin/coin.module').then( m => m.CoinPageModule)
+  },
+  {
+    path: 'temperature',
+    loadChildren: () => import('./temperature/temperature.module').then( m => m.TemperaturePageModule)
+  },
+  {
+    path: 'length',
+    loadChildren: () => import('./length/length.module').then( m => m.LengthPageModule)
+  },
+
 ];
 
 @NgModule({
