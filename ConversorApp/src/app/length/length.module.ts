@@ -13,8 +13,8 @@ import { LengthPage } from './length.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    LengthPageRoutingModule
+    LengthPageRoutingModule,
+    LengthPage
   ],
-  declarations: [LengthPage]
 })
 export class LengthPageModule {}

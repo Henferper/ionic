@@ -10,19 +10,18 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },
-  {
-    path: 'coin',
-    loadChildren: () => import('./coin/coin.module').then( m => m.CoinPageModule)
+  },  {
+    path: 'length',
+    loadChildren: () => import('./length/length.module').then( m => m.LengthPageModule)
   },
   {
     path: 'temperature',
     loadChildren: () => import('./temperature/temperature.module').then( m => m.TemperaturePageModule)
   },
   {
-    path: 'length',
-    loadChildren: () => import('./length/length.module').then( m => m.LengthPageModule)
-  },
+    path: 'coin',
+    loadChildren: () => import('./coin/coin.module').then( m => m.CoinPageModule)
+  }
 
 ];
 

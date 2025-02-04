@@ -13,8 +13,8 @@ import { TemperaturePage } from './temperature.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    TemperaturePageRoutingModule
+    TemperaturePageRoutingModule,
+    TemperaturePage
   ],
-  declarations: [TemperaturePage]
 })
 export class TemperaturePageModule {}
