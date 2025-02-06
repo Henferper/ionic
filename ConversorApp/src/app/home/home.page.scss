@@ -1,27 +1,31 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.page-container {
+  display: flex;
+  justify-content: center; // Centraliza horizontalmente
+  align-items: center; // Centraliza verticalmente
+  height: 100vh; // Faz o container ocupar a altura total da viewport
+  padding: 20px; // Adiciona um pouco de padding ao redor do conteúdo
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-card {
+  width: 100%; // Faz o card ocupar a largura total do container
+  max-width: 500px; // Define uma largura máxima para o card
+  padding: 20px; // Adiciona padding interno ao card
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-card-title {
+  font-size: 24px; // Aumenta o tamanho da fonte do título
+  text-align: center; // Centraliza o texto do título
 }
 
-#container a {
-  text-decoration: none;
+ion-item {
+  margin-bottom: 20px; // Adiciona espaço entre os itens
+}
+
+ion-button {
+  font-size: 18px; // Aumenta o tamanho da fonte do botão
+}
+
+h2 {
+  text-align: center; // Centraliza o texto do valor convertido
+  font-size: 20px; // Aumenta o tamanho da fonte do valor convertido
 }
