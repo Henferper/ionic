@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'length',
     loadChildren: () => import('./length/length.module').then( m => m.LengthPageModule)
   },
@@ -21,7 +22,15 @@ const routes: Routes = [
   {
     path: 'coin',
     loadChildren: () => import('./coin/coin.module').then( m => m.CoinPageModule)
+  },  {
+    path: 'speed',
+    loadChildren: () => import('./speed/speed.module').then( m => m.SpeedPageModule)
+  },
+  {
+    path: 'time',
+    loadChildren: () => import('./time/time.module').then( m => m.TimePageModule)
   }
+
 
 ];
 

@@ -9,7 +9,7 @@ import { CurrencyService } from '../services/currency.service';
   templateUrl: './coin.page.html',
   styleUrls: ['./coin.page.scss'],
   standalone: true,
-  imports: [CommonModule, FormsModule, IonicModule]
+  imports: [CommonModule, FormsModule, IonicModule] // ✅ Importando módulos do Ionic corretamente
 })
 export class CoinPage implements OnInit {
   inputValue: number | null = null;
